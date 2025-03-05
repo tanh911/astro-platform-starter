@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page - Google Form</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập Facebook</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Chào mừng đến với Landing Page của chúng tôi!</h1>
-    </header>
 
-    <section id="contact">
-        <h2>Liên hệ với chúng tôi</h2>
-        <!-- Nhúng Google Form vào đây -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSct-9QkM8A5MebnBxpK4N3p_P99EMZcD64HrO7sm9TJtCYHXQ/viewform?embedded=true" width="640" height="586" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </section>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>Facebook</h2>
+      
+      <!-- Form đăng nhập -->
+      <form>
+        <div class="input-group">
+          <input type="text" placeholder="Email hoặc số điện thoại" id="email" required>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Mật khẩu" id="password" required>
+        </div>
+        
+        <!-- Nút đăng nhập -->
+        <button type="submit" class="login-btn">Đăng nhập</button>
+        
+        <!-- Quên mật khẩu và đăng nhập bằng Facebook -->
+        <div class="forgot-password">
+          <a href="#">Quên mật khẩu?</a>
+        </div>
+      </form>
+      
+      <!-- Đăng ký tài khoản -->
+      <div class="signup-container">
+        <p>Chưa có tài khoản? <a href="#">Tạo tài khoản mới</a></p>
+      </div>
+      
+    </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 Công ty ABC</p>
-    </footer>
 </body>
 </html>
